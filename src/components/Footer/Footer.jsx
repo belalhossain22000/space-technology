@@ -62,7 +62,7 @@ const Footer = () => {
                 </div>
 
             </div>
-            <div className='w-[1130px] bg-[#18004A] h-[435px] rounded-[40px] text-center text-white absolute top-[-200px] left-[18%] py-[103px] px-[230px]  ' style={{ backgroundImage: "linear-gradient(140deg, #6F26BB 0%, rgba(111, 38, 187, 0.00) 100%, #6F26BB 100%)" }}>
+            <div className='w-[1130px] bg-[#18004A] h-[435px] rounded-[40px] text-center text-white absolute top-[-200px] left-[8%] right-[8%] py-[103px] px-[230px]  ' style={{ backgroundImage: "linear-gradient(140deg, #6F26BB 0%, rgba(111, 38, 187, 0.00) 100%, #6F26BB 100%)" }}>
                 <h1 className='text-[60px] font-normal leading-[64px] text-white'>Subscribe To Get The Latest News About Us </h1>
                 <div className='relative'>
 

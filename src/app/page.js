@@ -6,7 +6,7 @@ import UltimateExperience from "@/components/UltimateExperience/UltimateExperien
 
  const Home=() => {
   return (
-    <main className="bg-[#0C003D]">
+    <main className="bg-[#0C003D] ">
      <Hero/>
      <EnjoySpace/>
      <Destination/>

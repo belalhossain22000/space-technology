@@ -5,7 +5,7 @@ import { BsArrowRight } from 'react-icons/bs';
 
 const Hero = () => {
     return (
-        <section className='px-[134px] h-[800px]  w-full bg-[url("/heroimage.png")] bg-no-repeat  bg-center bg-contain'>
+        <section className='px-[134px] h-[800px]  w-full bg-[url("/heroimage.png")] bg-no-repeat bg-cover '>
             <div className=''>
 
                 <h1 className='uppercase pt-[236px] text-white text-[100px] font-normal leading-[100px] tracking-[0.5px]'>put your footprint in <br /> <span className='text-[#FF5A09]'>space travel</span></h1>
