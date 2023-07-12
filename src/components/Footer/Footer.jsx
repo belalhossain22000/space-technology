@@ -1,3 +1,4 @@
+"use client"
 import React from 'react';
 import Image from 'next/image'
 import Link from 'next/link';
@@ -61,9 +62,13 @@ const Footer = () => {
                 </div>
 
             </div>
-            <div className='w-[1130px] bg-[#18004A] h-[435px] rounded-[40px] text-center text-white absolute top-[-200px] left-[8%]' style={{ backgroundImage: "linear-gradient(140deg, #6F26BB 0%, rgba(111, 38, 187, 0.00) 100%, #6F26BB 100%)" }}>
-                <h1>Subscribe To Get The Latest News About Us </h1>
-                <input className='px-10 py-6 rounded-[40px]' style={{background:" linear-gradient(140deg, #6F26BB 0%, rgba(111, 38, 187, 0.00) 100%, #6F26BB 100%)"}} type="text" placeholder='Enter Your email' />
+            <div className='w-[1130px] bg-[#18004A] h-[435px] rounded-[40px] text-center text-white absolute top-[-200px] left-[18%] py-[103px] px-[230px]  ' style={{ backgroundImage: "linear-gradient(140deg, #6F26BB 0%, rgba(111, 38, 187, 0.00) 100%, #6F26BB 100%)" }}>
+                <h1 className='text-[60px] font-normal leading-[64px] text-white'>Subscribe To Get The Latest News About Us </h1>
+                <div className='relative'>
+
+                    <input className='mt-[33px] px-[42px] py-[17px] w-[550px] h-[69px] rounded-[40px]' style={{ background: " linear-gradient(140deg, #6F26BB 0%, rgba(111, 38, 187, 0.00) 100%, #6F26BB 100%)" }} type="text" placeholder='Enter Your email' />
+                    <button className='absolute top-[34px] right-5 py-5 px-[34px] w-[166px] h-[69px] rounded-r-[40px] -ml-8' style={{ background: "var(--p-2, linear-gradient(141deg, #FFB018 0%, #FF2900 63.83%))" }}>Subscribe</button>
+                </div>
             </div>
         </footer>
     );

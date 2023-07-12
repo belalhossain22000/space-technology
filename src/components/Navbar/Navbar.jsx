@@ -34,12 +34,12 @@ const Navbar = () => {
             <Link href={"/"}>
                 <img src="/logo.png" alt="logo" className='h-[46px] w-139px' />
             </Link>
-            <ul className='flex items-center gap-[30px]'>
+            <ul className='flex items-center gap-[30px] ml-[253p]'>
                 {
                     navLinks.map(({ path, title }) => <li className='text-[18px] font-medium hover:text-[#FF5A09] text-white' key={title}><Link href={path}>{title}</Link></li>)
                 }
             </ul>
-            <HiOutlineMenu className='text-white' />
+           <img src="/bar.png" alt="" />
         </nav>
     );
 };
