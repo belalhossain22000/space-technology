@@ -30,7 +30,7 @@ const navLinks = [
 
 const Navbar = () => {
     return (
-        <nav className='flex items-center justify-between w-full lg:px-[80px]  lx:px-[134px] py-[35px] fixed top-0'>
+        <nav className='flex items-center justify-between w-full  px-[50p] xl:px-[80p]  2xl:px-[134px] py-[35px] fixed top-0'>
             <Link href={"/"}>
                 <img src="/logo.png" alt="logo" className='h-[46px] w-139px' />
             </Link>
@@ -39,7 +39,7 @@ const Navbar = () => {
                     navLinks.map(({ path, title }) => <li className='text-[18px] font-medium hover:text-[#FF5A09] text-white' key={title}><Link className='text-[18px]' href={path}>{title}</Link></li>)
                 }
             </ul>
-           <img src="/bar.png" alt="" />
+            <img src="/bar.png" alt="" />
         </nav>
     );
 };
