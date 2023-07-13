@@ -44,7 +44,7 @@ const EnjoySpace = () => {
                         }}
                             transition={{
                                 repeat: Infinity,
-                                duration: 2,
+                                duration: 20,
                                 ease: 'linear',
                             }} className=' rounded-ful absolute top-[-121px] left-16' height={250} width={250} src={image} alt="" />
 
