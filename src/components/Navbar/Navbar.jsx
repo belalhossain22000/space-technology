@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import { FaBeer, FaXmark } from 'react-icons/fa';
 import { GrFormClose } from 'react-icons/gr';
+ 
 
 import Image from 'next/image'
 import Link from 'next/link';
@@ -30,10 +31,9 @@ const navLinks = [
 ];
 
 const Navbar = () => {
+    
     const [open, setOpen] = useState(false)
-    const toggleOpen = () => {
-        setOpen(!open);
-    };
+    
     return (
         <nav className=' flex items-center justify-between  w-full px-[30px] lg:px-[40px] xl:px-[60px]  2xl:px-[134px] py-[35px] fixed top-0'>
             <Link href={"/"}>
@@ -46,7 +46,7 @@ const Navbar = () => {
             </ul>
             <div onClick={()=>setOpen(!open)} className='text-white'>
                 {
-                    open ? <GrFormClose className='text-[35px] text-white bg-white'/> : <img className='h-[35px] w-[35px]' src="/bar.png" alt="" />
+                   open ? <GrFormClose className='text-[35px] text-white bg-white'/> : <img className='h-[35px] w-[35px]' src="/bar.png" alt="" />
                 }
             </div>
 
