@@ -3,12 +3,13 @@ import React from 'react';
 import Image from 'next/image'
 import Link from 'next/link';
 import { FaTwitter, FaYoutube, FaLinkedin } from 'react-icons/fa';
+import FooterInput from '@/utils/FooterInput';
 
 const Footer = () => {
     return (
-        <footer className='relative'>
+        <footer className='relative w-full px-[30px] lg:px-[40px] xl:px-[60px]  2xl:px-[134px]' style={{ backgroundImage: "linear-gradient(180deg, #4A188C 0%, #3E0174 13.32%, #0C003D 100%)" }}>
 
-            <div className='h-[700px] text-white grid grid-cols-5 pt-[400px] px-[134px]' style={{ backgroundImage: "linear-gradient(180deg, #4A188C 0%, #3E0174 13.32%, #0C003D 100%)" }}>
+            <div className=' text-white grid grid-cols-2 md:grid-cols-3 xl:grid-cols-5 lg:grid-cols-4 gap-[117px]  pt-[400px] pb-[53px]' >
 
                 <div className='space-y-[16px]'><img src="/logo.png" alt="logo" /></div>
                 <div className='space-y-[16px]'>
@@ -52,7 +53,7 @@ const Footer = () => {
                 </div>
                 <div className='space-y-[16px]'>
                     <h4 className='mb-[25px] text-[18px] font-medium leading-[22px]'>Our Social Media</h4>
-                    <div className='flex items-center gap-[12px]'>
+                    <div className='flex items-center sm:gap-[12px] gap-1'>
 
                         <FaTwitter className='bg-white h-[40px] w-[40px] px-[8px] py-[6px] text-[#5F5C51] rounded-full' />
                         <FaYoutube className='bg-white h-[40px] w-[40px] px-[8px] py-[6px] text-[#FF592C] rounded-full' />
@@ -62,13 +63,14 @@ const Footer = () => {
                 </div>
 
             </div>
-            <div className='w-[1130px] bg-[#18004A] h-[435px] rounded-[40px] text-center text-white absolute top-[-200px] left-[8%] right-[8%] py-[103px] px-[230px]  ' style={{ backgroundImage: "linear-gradient(140deg, #6F26BB 0%, rgba(111, 38, 187, 0.00) 100%, #6F26BB 100%)" }}>
-                <h1 className='text-[60px] font-normal leading-[64px] text-white'>Subscribe To Get The Latest News About Us </h1>
-                <div className='relative'>
-
-                    <input className='mt-[33px] px-[42px] py-[17px] w-[550px] h-[69px] rounded-[40px]' style={{ background: " linear-gradient(140deg, #6F26BB 0%, rgba(111, 38, 187, 0.00) 100%, #6F26BB 100%)" }} type="text" placeholder='Enter Your email' />
-                    <button className='absolute top-[34px] right-5 py-5 px-[34px] w-[166px] h-[69px] rounded-r-[40px] -ml-8' style={{ background: "var(--p-2, linear-gradient(141deg, #FFB018 0%, #FF2900 63.83%))" }}>Subscribe</button>
-                </div>
+            <div className='md:w-[85%] bg-[#18004A] h-[435px] rounded-[40px] text-center text-white absolute top-[-200px] left-0 p-5 md:p-0 lg:left-[7%]  xl:left-[8%] 2xl:left-[10%] xl:py-[103px] lg:py-[70px] lg:px-[100px] md:py-[50px] md:px-[80px] xl:px-[200x]' style={{ backgroundImage: "linear-gradient(140deg, #6F26BB 0%, rgba(111, 38, 187, 0.00) 100%, #6F26BB 100%)" }}>
+                <h1 className='text-[60px] font-normal leading-[64px] text-white'>Subscribe To Get The Latest News <br /> About Us </h1>
+               <FooterInput/>
+            </div>
+            <div className='bg-[#330F6F] h-[2px] w-full  mx-auto'></div>
+            <div className='text-white flex justify-between pb-[46px] pt-[33px]'>
+                <p className='text-[16px] font-normal'>Copyright- 2021 CreativePeoples</p>
+                <p className='text-[16px] font-normal'>Privacy Policy    |     Term of Use</p>
             </div>
         </footer>
     );
