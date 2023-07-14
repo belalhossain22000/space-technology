@@ -14,7 +14,7 @@ const UltimateExperience = () => {
                 border-2 border-white rounded-[100px] text-lg font-medium mt-[32px]' style={{ background: "var(--p-2, linear-gradient(141deg, #FFB018 0%, #FF2900 63.83%))" }}>
                     Contact us <BsArrowRight />
                 </button>
-                <img className='absolute left-[-59px] 3xl:left-[-390px]' src="/minirocket-left.png" alt="" />
+                <img className='absolute left-[-150px] 3xl:left-[-300px] ' src="/minirocket-left.png" alt="" />
             </div>
             <div className='xl:mt-0 mt-[80px]'>
                 <img className='lg:w-[616px] lg:h-[838px]' src="/moontoy-2.png" alt="" />

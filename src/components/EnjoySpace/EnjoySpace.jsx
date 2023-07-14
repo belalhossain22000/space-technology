@@ -37,7 +37,7 @@ const EnjoySpace = () => {
                         transition={{ duration: 0.5 }}
                         whileHover={{ scale: 1.2, backgroundImage: 'linear-gradient(180deg, rgba(255, 7, 114, 0.00) 14.62%, #FF5A09 100%)', }}
                         whileTap={{ scale: 0.9 }}
-                        key={id} className='flex flex-col justify-center relative bg-re-500 text-center w-[352px] h-[287px] rounded-[19px] my-[50px] xl:my-0 hover:bg-red-500' style={{ background: "linear-gradient(180deg, rgba(38, 1, 83, 0.00) 14.62%, #250153 100%)" }} >
+                        key={id} className='flex flex-col justify-center relative bg-re-500 text-center w-[352px] h-[287px] 3xl:w-[30%] rounded-[19px] my-[50px] xl:my-0 hover:bg-red-500' style={{ background: "linear-gradient(180deg, rgba(38, 1, 83, 0.00) 14.62%, #250153 100%)" }} >
 
                         <motion.img animate={{
                             rotate: [0, 360],
@@ -46,7 +46,8 @@ const EnjoySpace = () => {
                                 repeat: Infinity,
                                 duration: 20,
                                 ease: 'linear',
-                            }} className=' rounded-ful absolute top-[-121px] left-16' height={250} width={250} src={image} alt="" />
+                            }} className=' rounded-ful absolute top-[-121px]
+                             left-[15%] 3xl:left-[32%]' height={250} width={250} src={image} alt="" />
 
                         <div className=''>
                             <p className='text-[#FFF] text-[29px] font-medium '>{name}</p>
