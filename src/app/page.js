@@ -6,7 +6,7 @@ import UltimateExperience from "@/components/UltimateExperience/UltimateExperien
 
  const Home=() => {
   return (
-    <main className="bg-[#0C003D] overflow-x-hidde">
+    <main className="bg-[#0C003D] overflow-x-hidden">
      <Hero/>
      <EnjoySpace/>
      <Destination/>
