@@ -5,7 +5,7 @@ import { BsArrowRight } from 'react-icons/bs';
 
 const UltimateExperience = () => {
     return (
-        <section className='3xl:ml-[10%] lg:flex items-center justify-center  lg:justify-start 3xl:gap-[200px] w-full mt-[138px] px-[30px] lg:px-[40px] xl:px-[60px]  2xl:pl-[134px] pb-[377px] overflow-x-hidden'>
+        <section className='relative 3xl:ml-[10%] lg:flex items-center justify-center  lg:justify-start 3xl:gap-[200px] w-full mt-[138px] px-[30px] lg:px-[40px] xl:px-[60px]  2xl:pl-[134px] pb-[377px] overflow-x-hidden'>
             <div className='relative text-white text-center lg:text-left'>
                 <h1 className='text-[40px] lg:text-[50px] xl:text-[80px] mb-5 font-normal leading-[60px] xl:leading-[85px]'>Ultimate Experience  for <br /><span className='text-[#FE780E]'>outer space Travel</span> </h1>
                 <p className='text-lg mb-[50px] font-normal leading-[30px] '>Get the latest space exploration, innovation and astronomy <br /> news. Space.com celebrates humanity's ongoing expansion <br />
@@ -19,6 +19,7 @@ const UltimateExperience = () => {
             <div className='xl:mt-0 mt-[80px]'>
                 <img className='lg:w-[616px] lg:h-[838px]' src="/moontoy-2.png" alt="" />
             </div>
+            <img className='absolute left-0 ' style={{ mixBlendMode: 'color-dodge' }} src="/ultimate-bg.png" alt="" />
         </section>
     );
 };
