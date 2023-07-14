@@ -6,7 +6,7 @@ import { motion } from 'framer-motion';
 
 const Destination = () => {
     return (
-        <section className='overflow-xhidden lg:flex items-center justify-center  gap-5 3xl:ml-[10%] md:mt-[60px] xl:mt-[200px] px-[30px] lg:px-[40px] xl:px-[60p]  2xl:px-[134p] '>
+        <section className='overflow-xhidden lg:flex items-center justify-center  gap-5 3xl:ml-[10%] md:mt-[60px] xl:mt-[200px] px-[30px] lg:px-[40px] xl:px-[60p]  2xl:px-[134p]  '>
             <motion.div initial={{ opacity: 0, scale: 0.5 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 1 }} className='lg:w-1/2 relative'>

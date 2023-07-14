@@ -71,7 +71,8 @@ const Footer = () => {
                         <button className=' h-[69px] px-[120px] md:px-[34px] rounded-[40px] md:rounded-none mt-5 md:mt-0 md:rounded-r-[40px] md:-ml-8' style={{ background: "var(--p-2, linear-gradient(141deg, #FFB018 0%, #FF2900 63.83%))" }}>Subscribe</button>
                     </div>
                     <img className='rounded-[40px] absolute 2xl:left-[-9.8%] xl:top-[-35%]
-    xl:left-[-10.5%] 3xl:left-[-5%] 3xl:top-[-46%] lg:top-[-24%] lg:left-[-15%] md:top-[-12%] md:left-[-16%] sm:top-[30.6%] left-[-5%] hidden md:block' src="/footer-roket.png" alt="" />
+                    xl:left-[-10.5%] 3xl:left-[-5%] 3xl:top-[-46%] lg:top-[-24%] lg:left-[-15%] md:top-[-12%] md:left-[-16%] sm:top-[30.6%] left-[-5%] hidden md:block' src="/footer-roket.png" alt="" />
+                    <img className='absolute right-0 top-0 ' src="/footer-dot.png" alt="" />
                 </div>
             </div>
             <div className='bg-[#330F6F] h-[2px] w-full  mx-auto'></div>
