@@ -30,7 +30,7 @@ const EnjoySpace = () => {
             <div>
                 <h2 className='md:text-[55px]  text-[40px] text-center font-normal leading-[60px] tracking-[0.55px] mb-[132px]'>Enjoying Space Like Never Before</h2>
             </div>
-            <div className='flex flex-wrap items-center justify-center gap-[23px]'>
+            <div className='flex flex-wrap items-center justify-center gap-[23px] '>
                 {
                     planetData.map(({ title, name, image, id }) => <motion.div initial={{ scale: 0 }}
                         animate={{ scale: 1 }}

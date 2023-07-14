@@ -6,12 +6,12 @@ import { motion } from 'framer-motion';
 
 const Destination = () => {
     return (
-        <section className='lg:flex items-center justify-center gap-5 md:mt-[60px] xl:mt-[200px] px-[30px] lg:px-[40px] xl:px-[60p]  2xl:px-[134p]'>
+        <section className='overflow-xhidden lg:flex items-center justify-center  gap-5 3xl:ml-[10%] md:mt-[60px] xl:mt-[200px] px-[30px] lg:px-[40px] xl:px-[60p]  2xl:px-[134p] '>
             <motion.div initial={{ opacity: 0, scale: 0.5 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 1 }} className='lg:w-1/2 relative'>
                 <img className='lg:h-[744px] lg:w-[744px]' src="/earthToy.png" alt="" />
-                <img className='absolute left-[-40px] top-[-180px] w-[857px] h-[560px] ' src="/left-vector.png" alt="" />
+                <img className='absolute left-[-40px] 3xl:left-[-390px]  top-[-180px] w-[857px] h-[560px] ' src="/left-vector.png" alt="" />
             </motion.div>
             <div className='relative lg:w-1/2 text-white text-center lg:text-left '>
                 <h1 className='xl:text-[100px] md:text-[70px] sm:text-[50px] text-[40px] font-normal leading-[100px]'>Destinations <br />you can visit <br /> <span className='text-[#FF2C01]'>without a visa</span></h1>
