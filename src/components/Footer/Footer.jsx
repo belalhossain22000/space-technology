@@ -64,10 +64,14 @@ const Footer = () => {
 
             </div>
             <div className='md:w-[85%] bg-[#18004A] md:h-[435px] rounded-[40px] text-center text-white absolute top-[-200px] left-0 p-5 md:p-0 lg:left-[7%]  xl:left-[8%] 2xl:left-[8%] md:left-[7%] xl:py-[103px] lg:py-[70px] lg:px-[100px] md:py-[50px] md:px-[80px] xl:px-[200x]' style={{ backgroundImage: "linear-gradient(140deg, #6F26BB 0%, rgba(111, 38, 187, 0.00) 100%, #6F26BB 100%)" }}>
-                <h1 className='text-[60px] font-normal leading-[64px] text-white'>Subscribe To Get The Latest News <br /> About Us </h1>
-                <div className='md:w-[550px] mx-auto'>
-                    <input className='mt-[33px] px-[42px]  h-[69px] rounded-[40px]' style={{ background: " linear-gradient(140deg, #6F26BB 0%, rgba(111, 38, 187, 0.00) 100%, #6F26BB 100%)" }} type="text" placeholder='Enter Your email' />
-                    <button className=' h-[69px] px-[120px] md:px-[34px] rounded-[40px] md:rounded-none mt-5 md:mt-0 md:rounded-r-[40px] md:-ml-8' style={{ background: "var(--p-2, linear-gradient(141deg, #FFB018 0%, #FF2900 63.83%))" }}>Subscribe</button>
+                <div className='relative  '>
+                    <h1 className='text-[60px] font-normal leading-[64px] text-white'>Subscribe To Get The Latest News <br /> About Us </h1>
+                    <div className='md:w-[550px] mx-auto'>
+                        <input className='mt-[33px] px-[42px]  h-[69px] rounded-[40px]' style={{ background: " linear-gradient(140deg, #6F26BB 0%, rgba(111, 38, 187, 0.00) 100%, #6F26BB 100%)" }} type="text" placeholder='Enter Your email' />
+                        <button className=' h-[69px] px-[120px] md:px-[34px] rounded-[40px] md:rounded-none mt-5 md:mt-0 md:rounded-r-[40px] md:-ml-8' style={{ background: "var(--p-2, linear-gradient(141deg, #FFB018 0%, #FF2900 63.83%))" }}>Subscribe</button>
+                    </div>
+                    <img className='rounded-[40px] absolute 2xl:left-[-9.8%] xl:top-[-35%]
+    xl:left-[-10.5%] 3xl:left-[-5%] 3xl:top-[-46%] lg:top-[-24%] lg:left-[-15%] md:top-[-12%] md:left-[-16%] sm:top-[30.6%] left-[-5%] hidden md:block' src="/footer-roket.png" alt="" />
                 </div>
             </div>
             <div className='bg-[#330F6F] h-[2px] w-full  mx-auto'></div>
