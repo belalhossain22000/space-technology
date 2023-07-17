@@ -63,7 +63,7 @@ const Footer = () => {
                 </div>
 
             </div>
-            <div className='md:w-[85%] bg-[#18004A] md:h-[435px] rounded-[40px] text-center text-white absolute top-[-200px] left-[-10px] p-5 md:p-0 lg:left-[7%]  xl:left-[8%] 2xl:left-[8%] md:left-[7%] xl:py-[103px] lg:py-[70px] lg:px-[100px] md:py-[50px] md:px-[80px] xl:px-[200x] mx-5 md:mx-0' style={{ backgroundImage: "linear-gradient(140deg, #6F26BB 0%, rgba(111, 38, 187, 0.00) 100%, #6F26BB 100%)" }}>
+            <div className='md:w-[85%] bg-[#18004A] md:h-[435px] rounded-[40px] text-center text-white absolute top-[-200px] left-[-2.7%] sm:left-0 p-5 md:p-0 lg:left-[7%]  xl:left-[8%] 2xl:left-[8%] md:left-[7%] xl:py-[103px] lg:py-[70px] lg:px-[100px] md:py-[50px] md:px-[80px] xl:px-[200x] mx-5 md:mx-0' style={{ backgroundImage: "linear-gradient(140deg, #6F26BB 0%, rgba(111, 38, 187, 0.00) 100%, #6F26BB 100%)" }}>
                 <div className='relative  '>
                     <h1 className='md:text-[60px] text-[36px] leading-[45px] font-normal md:leading-[64px] text-white'>Subscribe To Get The Latest News <br /> About Us </h1>
                     <div className='md:w-[550px] mx-auto'>
