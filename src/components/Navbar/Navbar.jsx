@@ -44,7 +44,7 @@ const Navbar = () => {
             <Link href={"/"}>
                 <img src="/logo.png" alt="logo" className='h-[46px] w-139px' />
             </Link>
-            <ul  className={`lg:flex items-center gap-[30px]  absolute left-0 lg:static   ${open ? "top-20 bg-[#0C003D] w-full px-[50px] border-t-4 border-white" : " top-[-490px]"} transition-all duration-500 ease-in  z-[-1] lg:z-auto  `}>
+            <ul  className={`lg:flex items-center gap-[30px]  absolute left-0 lg:static   ${open ? "top-20 bg-[#0C003D] w-full px-[50px] border-t-4 border-white" : " top-[-490px]"} transition-all duration-1000 ease-in  z-[-1] lg:z-auto  `}>
                 {
                     navLinks.map(({ path, title }) => <li className='my-6 text-[18px] font-medium hover:text-[#FF5A09] text-white' key={title}><Link className='text-[18px]' href={path}>{title}</Link></li>)
                 }

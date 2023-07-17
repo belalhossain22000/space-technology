@@ -11,7 +11,8 @@ const Hero = () => {
         }}
             transition={{
                 repeat: Infinity,
-                duration: 10,
+                repeatType: 'reverse',
+                duration: 20,
                 ease: 'linear',
             }} className='px-[30px] lg:px-[40px] xl:px-[60px]  2xl:px-[120px] h-[800px]  w-full bg-[url("/heroimage.png")] bg-no-repeat bg-cover bg-center '>
             <div className=''>
@@ -24,7 +25,7 @@ const Hero = () => {
                     transition={{
                         repeat: Infinity,
                         repeatType: 'reverse',
-                        duration: 1,
+                        duration: 5,
                     }} className='text-white text-[24px] font-medium flex items-center md:gap-[67px] gap-[40px] md:py-[25px] py-[11px] px-[17px] md:px-[33px] border-[3px] border-white  rounded-[133.962px] mt-[50px]' style={{ background: "var(--p-2, linear-gradient(141deg, #FFB018 0%, #FF2900 63.83%))" }}>Get Started <BsArrowRight className='text-[24px] font-medium' /></motion.button>
             </div>
         </motion.section>
