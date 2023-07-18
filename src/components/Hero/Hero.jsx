@@ -2,7 +2,8 @@
 import React from 'react';
 import Image from 'next/image'
 import { BsArrowRight } from 'react-icons/bs';
-import Navbar from '../Navbar/Navbar';
+// import Navbar from '../Navbar/Navbar';
+import { motion } from 'framer-motion';
 
 
 const Hero = () => {
@@ -17,7 +18,7 @@ const Hero = () => {
                         WebkitTextFillColor: 'transparent',
                         fontFamily: 'Bebas Neue'
                     }}>SPACE TRAVEL</span></h1>
-                    <button  className='text-white text-[24px] font-medium flex items-center lg:gap-[67px] gap-[8px] md:gap-[20px]  md:py-[25px] py-[11px] px-[17px] md:px-[33px] border-[3px] border-white  rounded-[133.962px] lg:mt-[50px] md:mt-[30px] mt-[20px]' style={{  fontFamily: 'Roboto',background: "var(--p-2, linear-gradient(141deg, #FFB018 0%, #FF2900 63.83%))" }}>Get Started <BsArrowRight className='text-[24px] font-medium' /></button>
+                    <motion.button  whileHover={{  background: 'none' }} className='text-white text-[24px] font-medium flex items-center lg:gap-[67px] gap-[8px] md:gap-[20px]  md:py-[25px] py-[11px] px-[17px] md:px-[33px] border-[3px] border-white  rounded-[133.962px] lg:mt-[50px] md:mt-[30px] mt-[20px]' style={{  fontFamily: 'Roboto',background: "var(--p-2, linear-gradient(141deg, #FFB018 0%, #FF2900 63.83%))" }}>Get Started <BsArrowRight className='text-[24px] font-medium' /></motion.button>
                 </div>
             </div>
         </section>

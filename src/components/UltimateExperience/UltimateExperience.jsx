@@ -2,6 +2,7 @@
 import React from 'react';
 import Image from 'next/image'
 import { BsArrowRight } from 'react-icons/bs';
+import { motion } from 'framer-motion';
 
 const UltimateExperience = () => {
     return (
@@ -12,10 +13,10 @@ const UltimateExperience = () => {
                     <h1 style={{ fontFamily: 'Bebas Neue' }} className='text-[40px] lg:text-[50px] xl:text-[80px] mb-5 font-normal leading-[60px] xl:leading-[85px]'>Ultimate Experience  for <br /><span className='text-[#FE780E]'>outer space Travel</span> </h1>
                     <p style={{ fontFamily: 'Roboto' }} className='text-lg mb-[50px] font-normal leading-[30px] '>Get the latest space exploration, innovation and astronomy <br /> news. Space.com celebrates humanity's ongoing expansion <br />
                         across the final frontier.</p>
-                    <button className='lg:ml-0 md:ml-[40%] sm:ml-[30%] ml-[20%] flex gap-[3px] items-center px-[24px] py-[18px]
+                    <motion.button  whileHover={{background: 'none' }} className='lg:ml-0 md:ml-[40%] sm:ml-[30%] ml-[20%] flex gap-[3px] items-center px-[24px] py-[18px]
                 border-2 border-white rounded-[100px] text-lg font-medium mt-[32px]' style={{ background: "var(--p-2, linear-gradient(141deg, #FFB018 0%, #FF2900 63.83%))", fontFamily: 'Roboto' }}>
                         Contact us <BsArrowRight />
-                    </button>
+                    </motion.button>
 
                 </div>
                 <div className='xl:mt-0 mt-[80px] flex justify-center lg:justify-start'>
