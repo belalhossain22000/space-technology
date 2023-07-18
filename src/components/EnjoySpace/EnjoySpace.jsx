@@ -28,7 +28,7 @@ const EnjoySpace = () => {
     return (
         <section className=' text-white w-[1170px] max-w-full mx-auto '>
             <div className='p-5 lg:p-0'>
-                <h2 style={{ fontFamily: 'Bebas Neue' }} className='md:text-[55px]  text-[40px] text-center font-normal leading-[60px] tracking-[0.55px] pt-[46px] xl:mb-[132px]'>Enjoying Space Like Never Before</h2>
+                <h2 style={{ fontFamily: 'Bebas Neue' }} className='md:text-[55px]  text-[40px] text-center font-normal leading-[60px] tracking-[0.55px] lg:pt-[46px] xl:mb-[132px]'>Enjoying Space Like Never Before</h2>
             </div>
             <div className='flex flex-wrap items-center justify-center gap-[23px] xl:justify-between'>
                 {/* card */}
