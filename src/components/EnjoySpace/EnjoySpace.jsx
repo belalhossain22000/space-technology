@@ -26,35 +26,26 @@ const planetData = [
 
 const EnjoySpace = () => {
     return (
-        <section className='mt-[100px] text-white px-[30px] lg:px-[40px] xl:px-[60px]  2xl:px-[134px]'>
-            <div>
-                <h2 className='md:text-[55px]  text-[40px] text-center font-normal leading-[60px] tracking-[0.55px] mb-[132px]'>Enjoying Space Like Never Before</h2>
+        <section className=' text-white w-[1170px] max-w-full mx-auto '>
+            <div className='p-5 lg:p-0'>
+                <h2 style={{ fontFamily: 'Bebas Neue' }} className='md:text-[55px]  text-[40px] text-center font-normal leading-[60px] tracking-[0.55px] pt-[46px] xl:mb-[132px]'>Enjoying Space Like Never Before</h2>
             </div>
-            <div className='flex flex-wrap items-center justify-center gap-[23px] '>
+            <div className='flex flex-wrap items-center justify-center gap-[23px] xl:justify-between'>
+                {/* card */}
                 {
-                    planetData.map(({ title, name, image, id }) => <motion.div initial={{ scale: 0 }}
-                        animate={{ scale: 1 }}
-                        transition={{ duration: 0.5 }}
-                        whileHover={{ scale: 1.2, backgroundImage: 'linear-gradient(180deg, rgba(255, 7, 114, 0.00) 14.62%, #FF5A09 100%)', }}
-                        whileTap={{ scale: 0.9 }}
-                        key={id} className='flex flex-col justify-center relative bg-re-500 text-center w-[352px] h-[287px] 3xl:w-[30%] rounded-[19px] my-[50px] xl:my-0 hover:bg-red-500' style={{ background: "linear-gradient(180deg, rgba(38, 1, 83, 0.00) 14.62%, #250153 100%)" }} >
-
-                        <motion.img animate={{
-                            rotate: [0, 360],
-                        }}
-                            transition={{
-                                repeat: Infinity,
-                                duration: 20,
-                                ease: 'linear',
-                            }} className=' rounded-ful absolute top-[-121px]
-                             left-[15%] 3xl:left-[32%]' height={250} width={250} src={image} alt="" />
-
-                        <div className=''>
+                    planetData.map(({ title, name, image, id }) => <div
+                        key={id} className='h-[408px] p-1 md:p-0 md:w-[352px] text-center rounded-[19px] mt-[50px]' style={{ background: "linear-gradient(180deg, rgba(38, 1, 83, 0.00) 14.62%, #250153 100%)" }} >
+                        {/* image */}
+                        <div className='flex justify-center '>
+                            <img className='h-[250px] w-[250px]' src={image} alt="" />
+                        </div>
+                        {/* text */}
+                        <div className='' style={{ fontFamily: 'Roboto' }}>
                             <p className='text-[#FFF] text-[29px] font-medium '>{name}</p>
                             <div className='w-[40px] h-[2px] mx-auto' style={{ background: "linear-gradient(141deg, #FFB018 0%, #FF2900 63.83%)" }}></div>
                             <h4 className='text-[34px] font-medium'>{title}</h4>
                         </div>
-                    </motion.div>)
+                    </div>)
                 }
             </div>
         </section>
@@ -62,3 +53,4 @@ const EnjoySpace = () => {
 };
 
 export default EnjoySpace;
+// style={{ background: "linear-gradient(180deg, rgba(38, 1, 83, 0.00) 14.62%, #250153 100%)" }}
