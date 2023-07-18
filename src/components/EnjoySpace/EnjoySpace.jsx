@@ -33,19 +33,22 @@ const EnjoySpace = () => {
             <div className='flex flex-wrap items-center justify-center gap-[23px] xl:justify-between'>
                 {/* card */}
                 {
-                    planetData.map(({ title, name, image, id }) => <div
-                        key={id} className='h-[408px] p-1 md:p-0 md:w-[352px] text-center rounded-[19px] mt-[50px]' style={{ background: "linear-gradient(180deg, rgba(38, 1, 83, 0.00) 14.62%, #250153 100%)" }} >
+                    planetData.map(({ title, name, image, id }) => <motion.div
+                        whileHover={{ scale: 1.1, background: 'linear-gradient(180deg, rgba(255, 7, 114, 0.00) 14.62%, #FF5A09 100%)', }}
+                        whileTap={{ scale: 0.9 }}
+
+                        key={id} className='h-[408px] w-[80%] md:w-[352px] text-center rounded-[19px] mt-[50px]' style={{ background: "linear-gradient(180deg, rgba(38, 1, 83, 0.00) 14.62%, #250153 100%)" }} >
                         {/* image */}
-                        <div className='flex justify-center '>
+                        <div className='flex justify-center'>
                             <img className='h-[250px] w-[250px]' src={image} alt="" />
                         </div>
                         {/* text */}
-                        <div className='' style={{ fontFamily: 'Roboto' }}>
+                        <div className='px-5' style={{ fontFamily: 'Roboto' }}>
                             <p className='text-[#FFF] text-[29px] font-medium '>{name}</p>
                             <div className='w-[40px] h-[2px] mx-auto' style={{ background: "linear-gradient(141deg, #FFB018 0%, #FF2900 63.83%)" }}></div>
                             <h4 className='text-[34px] font-medium'>{title}</h4>
                         </div>
-                    </div>)
+                    </motion.div>)
                 }
             </div>
         </section>
