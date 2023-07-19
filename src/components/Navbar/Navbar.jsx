@@ -1,5 +1,5 @@
 "use client"
-import React, { useState,useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import { FaBeer, FaXmark } from 'react-icons/fa';
 import { GrFormClose } from 'react-icons/gr';
 import { motion } from "framer-motion"
@@ -42,20 +42,18 @@ const Navbar = () => {
     const [scrollPosition, setScrollPosition] = useState(0);
     useEffect(() => {
         const handleScroll = () => {
-          const position = window.pageYOffset;
-          setScrollPosition(position);
+            const position = window.pageYOffset;
+            setScrollPosition(position);
         };
-    
+
         window.addEventListener("scroll", handleScroll);
         return () => {
-          window.removeEventListener("scroll", handleScroll);
+            window.removeEventListener("scroll", handleScroll);
         };
-      }, []);
+    }, []);
 
     return (
-        <>
-         {/* <ScrollBackgroundChange /> */}
-        <nav className={`flex items-center justify-between xl:w-[1170px] max-w-full mx-auto py-[35px] fixed top-0 left-0 right-0 px-5 xl:px-0 z-30 ${scrollPosition > 0 ? " bg-[#4B168C] h-[80px] rounded-b-xl" : ""}`}>
+        <nav className={`flex items-center justify-between xl:w-[1170px] max-w-full mx-auto py-[35px] fixed top-0 left-0 right-0 px-5  z-30 ${scrollPosition > 0 ? " bg-[#4B168C] h-[80px] rounded-b-md" : ""}`}>
             <Link href={"/"}>
                 <img src="/logo.png" alt="logo" className='h-[46px] w-[139px]' />
             </Link>
@@ -75,8 +73,6 @@ const Navbar = () => {
             </div>
 
         </nav>
-        </>
-
     );
 };
 
