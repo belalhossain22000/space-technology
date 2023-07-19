@@ -2,6 +2,7 @@
 import React from 'react';
 import Image from 'next/image'
 import { motion } from 'framer-motion';
+import Reveals from '@/utils/Reveals/Reveals';
 
 const planetData = [
     {
@@ -27,8 +28,10 @@ const planetData = [
 const EnjoySpace = () => {
     return (
         <section className=' text-white w-[1170px] max-w-full mx-auto '>
-            <div className='p-5 lg:p-0'>
-                <h2 style={{ fontFamily: 'Bebas Neue' }} className='md:text-[55px]  text-[40px] text-center font-normal leading-[60px] tracking-[0.55px] lg:pt-[46px] xl:mb-[132px]'>Enjoying Space Like Never Before</h2>
+            <div className='p-5 lg:p-0 flex justify-center items-center'>
+                <Reveals>
+                    <h2 style={{ fontFamily: 'Bebas Neue' }} className='md:text-[55px]  text-[40px] text-center font-normal leading-[60px] tracking-[0.55px] lg:pt-[46px] xl:mb-[132px]'>Enjoying Space Like Never Before</h2>
+                </Reveals>
             </div>
             <div className='flex flex-wrap items-center justify-center gap-[23px] xl:justify-between'>
                 {/* card */}
@@ -43,10 +46,14 @@ const EnjoySpace = () => {
                             <img className='h-[250px] w-[250px]' src={image} alt="" />
                         </div>
                         {/* text */}
-                        <div className='px-5' style={{ fontFamily: 'Roboto' }}>
-                            <p className='text-[#FFF] text-[29px] font-medium '>{name}</p>
+                        <div className='px-5 flex justify-center items-center flex-col' style={{ fontFamily: 'Roboto' }}>
+                            <Reveals>
+                                <p className='text-[#FFF] text-[29px] font-medium '>{name}</p>
+                            </Reveals>
                             <div className='w-[40px] h-[2px] mx-auto' style={{ background: "linear-gradient(141deg, #FFB018 0%, #FF2900 63.83%)" }}></div>
-                            <h4 className='text-[34px] font-medium'>{title}</h4>
+                            <Reveals>
+                                <h4 className='text-[34px] font-medium'>{title}</h4>
+                            </Reveals>
                         </div>
                     </motion.div>)
                 }

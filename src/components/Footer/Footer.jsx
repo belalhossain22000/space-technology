@@ -4,6 +4,7 @@ import Image from 'next/image'
 import Link from 'next/link';
 import { FaTwitter, FaYoutube, FaLinkedin } from 'react-icons/fa';
 import FooterInput from '@/utils/FooterInput';
+import Reveals from '@/utils/Reveals/Reveals';
 
 const Footer = () => {
     return (
@@ -72,7 +73,11 @@ const Footer = () => {
             {/* news letter card  */}
             <div className='  bg-[#18004A] xl:w-[1130px] mx-5   xl:mx-auto mt-[-500p] rounded-[40px] text-center text-white absolute top-[-200px] left-0 right-0 md:h-[435px] ' style={{ backgroundImage: "linear-gradient(140deg, #6F26BB 0%, rgba(111, 38, 187, 0.00) 100%, #6F26BB 100%)" }}>
                 <div className='relative py-5 px-2 md:py-[103px] '>
-                    <h1 style={{ fontFamily: 'Bebas Neue' }} className='md:text-[60px] text-[36px] leading-[45px] font-normal md:leading-[64px] text-white'>Subscribe To Get The Latest News <br /> About Us </h1>
+                    <div className='flex justify-center items-center'>
+                        <Reveals>
+                            <h1 style={{ fontFamily: 'Bebas Neue' }} className='md:text-[60px] text-[36px] leading-[45px] font-normal md:leading-[64px] text-white'>Subscribe To Get The Latest News <br /> About Us </h1>
+                        </Reveals>
+                    </div>
                     <div className='md:w-[550px] mx-auto' style={{ fontFamily: 'Roboto' }}>
                         <input className='mt-[33px] px-[42px]  h-[69px] rounded-[40px]' style={{ background: " linear-gradient(140deg, #6F26BB 0%, rgba(111, 38, 187, 0.00) 100%, #6F26BB 100%)" }} type="text" placeholder='Enter Your email' />
                         <button className=' h-[69px] px-[100px] md:px-[34px] rounded-[40px] md:rounded-none mt-5 md:mt-0 md:rounded-r-[40px] md:-ml-8' style={{ background: "var(--p-2, linear-gradient(141deg, #FFB018 0%, #FF2900 63.83%))" }}>Subscribe</button>
