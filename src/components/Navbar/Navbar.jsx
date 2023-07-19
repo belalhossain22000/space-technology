@@ -1,5 +1,5 @@
 "use client"
-import React, { useState } from 'react';
+import React, { useState,useEffect } from 'react';
 import { FaBeer, FaXmark } from 'react-icons/fa';
 import { GrFormClose } from 'react-icons/gr';
 import { motion } from "framer-motion"
@@ -7,6 +7,7 @@ import { motion } from "framer-motion"
 
 import Image from 'next/image'
 import Link from 'next/link';
+// import ScrollBackgroundChange from '@/utils/ScrollBackgroundChange/ScrollBackgroundChange';
 
 const navLinks = [
     {
@@ -38,10 +39,23 @@ const Navbar = () => {
     }
 
     const [open, setOpen] = useState(false)
+    const [scrollPosition, setScrollPosition] = useState(0);
+    useEffect(() => {
+        const handleScroll = () => {
+          const position = window.pageYOffset;
+          setScrollPosition(position);
+        };
+    
+        window.addEventListener("scroll", handleScroll);
+        return () => {
+          window.removeEventListener("scroll", handleScroll);
+        };
+      }, []);
 
     return (
-
-        <nav className=' flex items-center justify-between xl:w-[1170px] max-w-full mx-auto py-[35px] fixed top-0 left-0 right-0 px-5 xl:px-0'>
+        <>
+         {/* <ScrollBackgroundChange /> */}
+        <nav className={`flex items-center justify-between xl:w-[1170px] max-w-full mx-auto py-[35px] fixed top-0 left-0 right-0 px-5 xl:px-0 z-30 ${scrollPosition > 0 ? " bg-[#4B168C] h-[80px] rounded-b-xl" : ""}`}>
             <Link href={"/"}>
                 <img src="/logo.png" alt="logo" className='h-[46px] w-[139px]' />
             </Link>
@@ -61,10 +75,10 @@ const Navbar = () => {
             </div>
 
         </nav>
+        </>
 
     );
 };
 
 export default Navbar;
 
-//  absolute   lg:static lg:z-auto z-[-1] w-full  transition-all duration-500 ease-in ${open?"top-20":" top-[490px]"}
