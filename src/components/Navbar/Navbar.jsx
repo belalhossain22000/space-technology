@@ -89,13 +89,13 @@ const Navbar = () => {
             {/* side bar */}
             <aside className={`overflow-y-auto pb-14 bg-[#4B168C] text-white w-[70%] xlg:w-[30%] h-[100vh] rounded-md transition-all duration-700 z-50 absolute top-[0px] ${open ? "left-0" : "left-[-2000px]"}`}>
                 {/* navigatioin item */}
-                <ul className={`px-5 md:hidden  flex items-start md:items-center  flex-col `} style={{ fontFamily: ' Roboto' }}>
+                <ul className={`px-5   flex items-start md:items-center  flex-col `} style={{ fontFamily: ' Roboto' }}>
                     {/* logo for small device */}
                     <Link href={"/"} className=' mt-5'>
                         <img src="/logo.png" alt="logo" className='h-[46px] mt-10 w-[139px] ' />
                     </Link>
                     {
-                        navLinks.map(({ path, title }) => <li className='mt-5 text-[18px] font-medium duration-1000 transition-all hover:text-[#FF5A09] text-white' key={title}><Link className='text-[18px]' href={path}>{title}</Link></li>)
+                        navLinks.map(({ path, title }) => <li className='mt-5 text-[18px] font-medium duration-1000 transition-all hover:text-[#FF5A09] text-white md:hidden' key={title}><Link className='text-[18px]' href={path}>{title}</Link></li>)
                     }
                 </ul>
                 <div className='space-y-[16px]  mt-5 px-5'>
