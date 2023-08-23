@@ -10,11 +10,11 @@ const Footer = () => {
     return (
         <footer className='relative ' style={{ backgroundImage: "linear-gradient(180deg, #4A188C 0%, #3E0174 13.32%, #0C003D 100%)" }}>
 
-            <div className=' text-white pt-[200px] md:pt-[275px] lg:pt-[394px] w-[1170px] max-w-full mx-auto sm:flex justify-between flex-wrap px-5' style={{ fontFamily: 'Inter' }} >
+            <div className=' text-white pt-[200px] md:pt-[275px] lg:pt-[394px] w-[1170px] max-w-full mx-auto footer px-5' style={{ fontFamily: 'Inter' }} >
 
                 <div className='space-y-[16px]'><img src="/logo.png" alt="logo" /></div>
-                <div className='space-y-[16px]'>
-                    <h4 className='mb-[25px] text-[18px] font-medium leading-[22px]'>Products</h4>
+                <div className='space-y-[16px] '>
+                    <h4 className=' mb-3 md:mb-[25px] text-[18px] font-medium leading-[22px]'>Products</h4>
                     <Link href={"#"} className='text-[16px] font-normal leading-[20px]'>Squat Rack</Link>
                     <p></p>
                     <Link href={"#"} className='text-[16px] font-normal leading-[20px]'>Power Tower</Link>
@@ -26,8 +26,8 @@ const Footer = () => {
                     <Link href={"#"} className='text-[16px] font-normal leading-[20px]'>Institutional</Link>
                     <p></p>
                 </div>
-                <div className='space-y-[16px]'>
-                    <h4 className='mb-[25px] text-[18px] font-medium leading-[22px]'>Resources</h4>
+                <div className='space-y-[16px] mt-[-150px] sm:mt-0'>
+                    <h4 className='mb-3 md:mb-[25px] text-[18px] font-medium leading-[22px]'>Resources</h4>
                     <Link href={"#"} className='text-[16px] font-normal leading-[20px]'>APIs</Link>
                     <p></p>
                     <Link href={"#"} className='text-[16px] font-normal leading-[20px]'>Status</Link>
@@ -40,7 +40,7 @@ const Footer = () => {
                     <p></p>
                 </div>
                 <div className='space-y-[16px]'>
-                    <h4 className='mb-[25px] text-[18px] font-medium leading-[22px]'>Company</h4>
+                    <h4 className='mb-3 md:mb-[25px] text-[18px] font-medium leading-[22px]'>Company</h4>
                     <Link href={"#"} className='text-[16px] font-normal leading-[20px]'>About</Link>
                     <p></p>
                     <Link href={"#"} className='text-[16px] font-normal leading-[20px]'>Careers Hiring</Link>
@@ -52,13 +52,13 @@ const Footer = () => {
                     <Link href={"#"} className='text-[16px] font-normal leading-[20px]'>Ventures</Link>
                     <p></p>
                 </div>
-                <div className='space-y-[16px]'>
-                    <h4 className='mb-[25px] text-[18px] font-medium leading-[22px]'>Our Social Media</h4>
+                <div className='space-y-[16px] order-1  mt-[-150px] sm:mt-0'>
+                    <h4 className='mb-3 md:mb-[25px] text-[18px] font-medium leading-[22px]'>Our Social Media</h4>
                     <div className='flex items-center sm:gap-[12px] gap-1'>
 
-                        <FaTwitter className='bg-white h-[40px] w-[40px] px-[8px] py-[6px] text-[#5F5C51] rounded-full' />
-                        <FaYoutube className='bg-white h-[40px] w-[40px] px-[8px] py-[6px] text-[#FF592C] rounded-full' />
-                        <FaLinkedin className='bg-white h-[40px] w-[40px] px-[8px] py-[6px] text-[#5F5C51] rounded-full' />
+                        <FaTwitter className='bg-white transition-all duration-1000 hover:bg-[#5F5C51] hover:text-white h-[40px] w-[40px] px-[8px] py-[6px] text-[#5F5C51] rounded-full' />
+                        <FaYoutube className='bg-white transition-all duration-1000 hover:bg-[#FF592C] hover:text-white  h-[40px] w-[40px] px-[8px] py-[6px] text-[#FF592C] rounded-full' />
+                        <FaLinkedin className='bg-white transition-all duration-1000 hover:bg-[#5F5C51] hover:text-white  h-[40px] w-[40px] px-[8px] py-[6px] text-[#5F5C51] rounded-full' />
                     </div>
 
                 </div>

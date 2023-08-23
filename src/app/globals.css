@@ -7,3 +7,8 @@
 body {
     font-family: 'Bebas Neue';
 }
+.footer{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(150px,1fr));
+    grid-auto-flow: dense;
+}
