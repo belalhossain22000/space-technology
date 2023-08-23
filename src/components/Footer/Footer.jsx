@@ -10,9 +10,9 @@ const Footer = () => {
     return (
         <footer className='relative ' style={{ backgroundImage: "linear-gradient(180deg, #4A188C 0%, #3E0174 13.32%, #0C003D 100%)" }}>
 
-            <div className=' text-white pt-[200px] md:pt-[275px] lg:pt-[394px] w-[1170px] max-w-full mx-auto footer px-5' style={{ fontFamily: 'Inter' }} >
+            <div className=' text-white pt-[200px] md:pt-[275px] lg:pt-[394px] w-[1170px] max-w-full mx-auto lsm:flex justify-between  flex-wrap px-5' style={{ fontFamily: 'Inter' }} >
 
-                <div className='space-y-[16px]'><img src="/logo.png" alt="logo" /></div>
+                <div className='space-y-[16px] mb-5'><img src="/logo.png" alt="logo" /></div>
                 <div className='space-y-[16px] '>
                     <h4 className=' mb-3 md:mb-[25px] text-[18px] font-medium leading-[22px]'>Products</h4>
                     <Link href={"#"} className='text-[16px] font-normal leading-[20px]'>Squat Rack</Link>
@@ -26,7 +26,7 @@ const Footer = () => {
                     <Link href={"#"} className='text-[16px] font-normal leading-[20px]'>Institutional</Link>
                     <p></p>
                 </div>
-                <div className='space-y-[16px] mt-[-150px] sm:mt-0'>
+                <div className='space-y-[16px]'>
                     <h4 className='mb-3 md:mb-[25px] text-[18px] font-medium leading-[22px]'>Resources</h4>
                     <Link href={"#"} className='text-[16px] font-normal leading-[20px]'>APIs</Link>
                     <p></p>
@@ -52,7 +52,7 @@ const Footer = () => {
                     <Link href={"#"} className='text-[16px] font-normal leading-[20px]'>Ventures</Link>
                     <p></p>
                 </div>
-                <div className='space-y-[16px] order-1  mt-[-150px] sm:mt-0'>
+                <div className='space-y-[16px] order-1 '>
                     <h4 className='mb-3 md:mb-[25px] text-[18px] font-medium leading-[22px]'>Our Social Media</h4>
                     <div className='flex items-center sm:gap-[12px] gap-1'>
 
