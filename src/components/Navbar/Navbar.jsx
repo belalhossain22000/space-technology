@@ -65,7 +65,7 @@ const Navbar = () => {
     }, []);
 
     return (
-        <nav className='relative'>
+        <nav className='fixed top-0 left-0 right-0 z-50'>
 
             <div className={` flex items-center justify-between xl:w-[1170px] max-w-full mx-auto py-[35px] fixed top-0 left-0 right-0 px-5  z-30 ${scrollPosition > 0 ? " bg-[#4B168C] h-[80px] rounded-b-md" : ""}`}>
                 <Link href={"/"}>
@@ -76,7 +76,6 @@ const Navbar = () => {
                         navLinks.map(({ path, title }) => <li className='my-6 text-[18px] font-medium duration-1000 transition-all hover:text-[#FF5A09] text-white' key={title}><Link className='text-[18px]' href={path}>{title}</Link></li>)
                     }
                 </ul>
-
 
                 {/* hamburger */}
                 <div onClick={() => setOpen(!open)} className='text-white cursor-pointer '>
@@ -109,6 +108,7 @@ const Navbar = () => {
 
                 </div>
             </aside>
+
         </nav>
     );
 };
